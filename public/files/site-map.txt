@@ -1,0 +1,14 @@
+HOUSE BENEATH THE WATER
+/              room
+/about/        photograph
+/grimoire/     rooted stars
+/shrines/      altar cabinet
+/creatures/    field archive
+/stables/      mountain brook stables
+/drawer/       art drawer
+/journal/      terminal log
+/stripe/       sightings database
+/links/        small doors
+/outside/      rain + bench
+/nothing/      fish
+/moon/         roof access

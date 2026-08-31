@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#08091d">
+  <title>the impossible garden // finch</title>
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <style>
+    #garden-canvas{position:fixed;inset:0;z-index:0;overflow:hidden;background:#050716;pointer-events:none}
+    #garden-canvas canvas{display:block!important}
+    body.garden-page:before{background:repeating-linear-gradient(0deg,rgba(255,255,255,.009) 0 1px,transparent 1px 3px),radial-gradient(ellipse at 50% 10%,rgba(115,103,174,.12),transparent 58%)}
+    .garden-window{min-height:64vh;border:2px ridge #5f587d;background:rgba(4,5,14,.64);padding:7px;position:relative;overflow:hidden}
+    .garden-window:before{content:"";position:absolute;inset:7px;border:1px dotted rgba(170,160,206,.23);pointer-events:none}
+    .garden-note{width:min(420px,92%);margin:8vh auto 0;background:rgba(9,8,24,.83);border:2px outset #665d88;padding:10px 12px;box-shadow:5px 5px rgba(0,0,0,.45);position:relative;z-index:3}
+    .garden-note h2{margin:0 0 5px;font:normal 25px Georgia,'Times New Roman',serif;color:#dad4f1}
+    .garden-note p{margin:5px 0;color:#aaa3c5}
+    .garden-note .tiny{color:#77708f}
+    .pressed-flower{display:inline-block;margin-top:5px;padding:4px 6px;border:1px dotted #787094;background:#0c0b22}
+    @media(max-width:600px){.garden-window{min-height:70vh}.garden-note{margin-top:5vh}}
+    @media(prefers-reduced-motion:reduce){.garden-window{background:rgba(4,5,14,.72)}}
+  </style>
+</head>
+<body class="garden-page">
+  <a class="skip" href="#main">skip through the grass</a>
+  <div id="garden-canvas" aria-hidden="true"></div>
+  <div class="shell">
+    <div class="utility"><span>http://somewhere-under-the-water/garden/</span><span>there should not be enough sunlight for this.</span></div>
+    <header class="banner">
+      <h1>the impossible garden</h1>
+      <p>somehow, roots found a crack in the ceiling.</p>
+      <a href="/moon/" title="something is up there"><img class="tiny-moon" src="/assets/img/moon.png" alt="crescent moon"></a>
+    </header>
+    <nav class="oldnav" aria-label="main navigation"><a href="/">home</a><a href="/grimoire/">grimoire</a><a href="/shrines/">shrines</a><a href="/creatures/">creatures</a><a href="/stables/">stable</a><a href="/drawer/">drawer</a><a href="/journal/">journal</a><a href="/links/">links</a></nav>
+    <div class="marquee" aria-hidden="true"><span>tiny lights below the surface :: handmade pages :: horses in the next valley :: wet paper drying on the radiator :: leave the shiny thing where you found it :: </span></div>
+    <div class="pagegrid">
+      <aside class="sidebar" aria-label="side notes">
+        <section class="box"><div class="boxtitle">cave conditions</div><p><span class="status-dot"></span> lights are on</p><p>local cave visits: <span class="counter local-visits">00001</span></p><p>pressure: tolerable<br>visibility: poor<br>signal: somehow</p></section>
+        <section class="box"><div class="boxtitle">pocket</div><p><span class="pocket-count">0</span> small thing(s) kept.</p><p class="pocket-list treasure-output">empty</p><button class="empty-pocket">turn pockets out</button></section>
+        <section class="box"><div class="boxtitle">crawlspace</div><ul class="pixel-links"><li><a href="/about/">photograph</a></li><li><a href="/stripe/">stripe sightings</a></li><li><a href="/outside/">outside</a></li><li><a href="/nothing/">nothing</a></li><li><a href="/files/waterlogged.txt">waterlogged.txt</a></li></ul></section>
+      </aside>
+      <main class="main" id="main">
+        <section class="garden-window">
+          <div class="garden-note">
+            <p class="tiny">[ room ? : ceiling breach / botanical consequences ]</p>
+            <h2>the garden that should not be here</h2>
+            <p>Grass has pushed up through the stone. The flowers lean whenever the cave exhales.</p>
+            <p>Nothing needs tending yet. You can just stay awhile.</p>
+            <div class="pressed-flower">✿ <button class="collect-treasure" data-treasure="pressed violet">press one small violet</button></div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer><p class="footerline">handmade on the internet ♡</p><p>no algorithms live here. no feed. no infinite scroll. you eventually reach the wall.</p><p>© finch · built for neocities · <a href="/files/site-map.txt">site-map.txt</a></p></footer>
+  </div>
+  <script src="/assets/vendor/p5.min.js"></script><script>if(typeof p5==='undefined'){document.write('<script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"><\/script>')}</script>
+  <script src="/assets/js/garden.js"></script>
+  <script src="/assets/js/site.js"></script>
+</body>
+</html>
