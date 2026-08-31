@@ -1,0 +1,11 @@
+{
+  "name": "house-beneath-the-water",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/prepare-vercel.mjs"
+  },
+  "dependencies": {
+    "p5": "1.11.11"
+  }
+}
